@@ -9,15 +9,8 @@ class Questions
         string[] questions = System.IO.File.ReadAllLines(@"F:\Creative Projects\programming\C#\questions\question\txts\questions.txt");
         string[] answers = System.IO.File.ReadAllLines(@"F:\Creative Projects\programming\C#\questions\question\txts\answers.txt");
 
-        for (int i = 0; i < questions.Length; i++)
-        {
-            Console.WriteLine(questions[i]);
-        }
-
-        for (int i = 0; i < answers.Length; i++)
-        {
-            Console.WriteLine(answers[i]);
-        }
-
+        Console.WriteLine("Welcome to my console trivia application!\nHow many questions would you like today?");
+        int usrChoice = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(usrChoice);
     }
 }
