@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Formats.Asn1;
 using System.IO;
 using System.IO.Enumeration;
 
@@ -13,13 +14,14 @@ class Questions
 
         for (int i = 0; i < usrChoice; i++)
         {
-            string[] questions = System.IO.File.ReadAllLines(@"F:\Creative Projects\programming\C#\questions\question\txts\questions.txt");
-            string[] answers = System.IO.File.ReadAllLines(@"F:\Creative Projects\programming\C#\questions\question\txts\answers.txt");
+            string[] qu = { "Is Scotland part of the UK?", "Does WWE stand for World Wrestling Education?" };
+            string[] an = { "yes", "no" };
 
             Random rand = new Random();
             int index = rand.Next(questions.Length);
-            int ansrInput = 0;
+          
             Console.WriteLine($"{questions[index]}");
+            string ansr = Console.ReadLine();
         }
     }
 }
