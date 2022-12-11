@@ -1,0 +1,15 @@
+F:\Creative Projects\programming\C#\questions\question\bin\Debug\net6.0\question.exe
+F:\Creative Projects\programming\C#\questions\question\bin\Debug\net6.0\question.deps.json
+F:\Creative Projects\programming\C#\questions\question\bin\Debug\net6.0\question.runtimeconfig.json
+F:\Creative Projects\programming\C#\questions\question\bin\Debug\net6.0\question.dll
+F:\Creative Projects\programming\C#\questions\question\bin\Debug\net6.0\question.pdb
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\question.csproj.AssemblyReference.cache
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\question.GeneratedMSBuildEditorConfig.editorconfig
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\question.AssemblyInfoInputs.cache
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\question.AssemblyInfo.cs
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\question.csproj.CoreCompileInputs.cache
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\question.dll
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\refint\question.dll
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\question.pdb
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\question.genruntimeconfig.cache
+F:\Creative Projects\programming\C#\questions\question\obj\Debug\net6.0\ref\question.dll
