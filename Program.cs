@@ -6,19 +6,18 @@ class Questions
 {
     static void Main()
     {
-        string Qpath = "F:\\Creative Projects\\programming\\C#\\questions\\question\\txts\\questions";
-        string Apath = "F:\\Creative Projects\\programming\\C#\\questions\\question\\txts\\answers";
-        var Qfiles = Directory.GetFiles(Qpath);
-        var Afiles = Directory.GetFiles(Apath);
+        string[] questions = System.IO.File.ReadAllLines(@"F:\Creative Projects\programming\C#\questions\question\txts\questions.txt");
+        string[] answers = System.IO.File.ReadAllLines(@"F:\Creative Projects\programming\C#\questions\question\txts\answers.txt");
 
-        foreach (var file in Qfiles)
+        for (int i = 0; i < questions.Length; i++)
         {
-
+            Console.WriteLine(questions[i]);
         }
 
-        foreach (var file in Afiles)
+        for (int i = 0; i < answers.Length; i++)
         {
-
+            Console.WriteLine(answers[i]);
         }
+
     }
 }
