@@ -1,14 +1,17 @@
 ﻿using System;
 using System.IO;
+using System.IO.Enumeration;
 
 class Questions
 {
     static void Main()
     {
-        string[] sportQ = System.IO.File.ReadAllLines(@"F:\Creative Projects\programming\C#\questions\question\txts\sportQ.txt");
-        foreach (string line in sportQ)
+        string path = "F:\\Creative Projects\\programming\\C#\\questions\\question\\txts\\";
+        var files = Directory.GetFiles(path);
+
+        foreach (var file in files)
         {
-            Console.WriteLine(line);
+            Console.WriteLine(file);
         }
     }
 }
