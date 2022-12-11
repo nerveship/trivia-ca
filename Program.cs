@@ -6,12 +6,19 @@ class Questions
 {
     static void Main()
     {
-        string path = "F:\\Creative Projects\\programming\\C#\\questions\\question\\txts\\";
-        var files = Directory.GetFiles(path);
+        string Qpath = "F:\\Creative Projects\\programming\\C#\\questions\\question\\txts\\questions";
+        string Apath = "F:\\Creative Projects\\programming\\C#\\questions\\question\\txts\\answers";
+        var Qfiles = Directory.GetFiles(Qpath);
+        var Afiles = Directory.GetFiles(Apath);
 
-        foreach (var file in files)
+        foreach (var file in Qfiles)
         {
-            Console.WriteLine(file);
+
+        }
+
+        foreach (var file in Afiles)
+        {
+
         }
     }
 }
