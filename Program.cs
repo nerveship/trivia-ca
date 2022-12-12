@@ -17,11 +17,11 @@ class Questions
             string[] qu = { "Is Scotland part of the UK?", "Does WWE stand for World Wrestling Education?" };
             string[] an = { "yes", "no" };
 
-            Random rand = new Random();
-            int index = rand.Next(questions.Length);
+            Random rand = new();
+            int index = rand.Next(qu.Length);
           
-            Console.WriteLine($"{questions[index]}");
-            string ansr = Console.ReadLine();
+            Console.WriteLine($"{qu[index]}");
+            string usrGuess =  Console.ReadLine();
         }
     }
 }
