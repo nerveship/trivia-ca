@@ -8,13 +8,18 @@ class Questions
 {
     public static void Main()
     {
+        //Initialise values and arrays
         int score = 0;
-        int maxQuestions = 3;
+        string[] qu = { "Is Scotland part of the UK?", "Does WWE stand for World Wrestling Education?",
+            "Are there 5 countries in the UK?"};
+        string[] an = { "yes", "no", "no" };
+        int maxQuestions = qu.Length;
 
         //Greets the user and prompts them for the number of questions they would like to answer
         Console.WriteLine("Welcome to my console trivia application!\nHow many questions would you like today?");
         int usrChoice = Convert.ToInt32(Console.ReadLine());
 
+        //Makes sure the user doesn't select more or less questions than there are available
         while (usrChoice > maxQuestions)
         {
             Console.WriteLine($"Please choose between 1-{maxQuestions}");
@@ -28,10 +33,6 @@ class Questions
         //Loops over the amount of questions the user selected, starting with one and printing another when they answer
         for (int i = 0; i < usrChoice; i++)
         {
-            string[] qu = { "Is Scotland part of the UK?", "Does WWE stand for World Wrestling Education?",
-            "Are there 5 countries in the UK?"};
-            string[] an = { "yes", "no", "no" };
-
             Console.WriteLine(qu[i]);
             string usrGuess = Console.ReadLine();
             if (usrGuess == an[i])
@@ -39,6 +40,6 @@ class Questions
                 score++;
             }
         }
-        Console.WriteLine($"You got {score} questions right! Well done!");
+        Console.WriteLine($"You got {score} out of {usrChoice} questions correct! Well done!");
     }
 }
