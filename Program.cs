@@ -11,8 +11,9 @@ class Questions
         //Initialise values and arrays
         int score = 0;
         string[] qu = { "Is Scotland part of the UK?", "Does WWE stand for World Wrestling Education?",
-            "Are there 5 countries in the UK?"};
-        string[] an = { "yes", "no", "no" };
+            "Are there 5 countries in the UK?", "Did the PS4 come out in 2014?", "When did Bloodborne release?", "When was the Switch released?",
+        "What month is Christmas in?"};
+        string[] an = { "yes", "no", "no", "no", "2015", "2017", "december"};
         int maxQuestions = qu.Length;
 
         //Greets the user and prompts them for the number of questions they would like to answer
@@ -34,7 +35,7 @@ class Questions
         for (int i = 0; i < usrChoice; i++)
         {
             Console.WriteLine(qu[i]);
-            string usrGuess = Console.ReadLine();
+            string usrGuess = Console.ReadLine().ToLower();
             if (usrGuess == an[i])
             {
                 score++;
