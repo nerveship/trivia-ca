@@ -41,6 +41,7 @@ class Questions
                 score++;
             }
         }
-        Console.WriteLine($"You got {score} out of {usrChoice} questions correct! Well done!");
+        var percent = usrChoice / score;
+        Console.WriteLine($"You got {score} out of {usrChoice} questions correct! Well done!\nThis means you got {percent}% correct!");
     }
 }
